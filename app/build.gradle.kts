@@ -11,7 +11,7 @@ android {
   compileSdkVersion(Api.compileSDK)
 
   defaultConfig {
-    applicationId = "com.celerik.android_kotlin_boilerplate"
+    applicationId = "com.celerik.app"
     minSdkVersion(Api.minSDK)
     targetSdkVersion(Api.targetSDK)
     versionCode = getNewVersionCode()

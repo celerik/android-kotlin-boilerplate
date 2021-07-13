@@ -119,8 +119,6 @@ object Libraries {
   const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
   const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 
-  const val sentry = "io.sentry:sentry-android:${Versions.sentry}"
-
   const val okReplay = "com.airbnb.okreplay:okreplay:${Versions.okReplay}"
   const val okReplayNoop = "com.airbnb.okreplay:noop:${Versions.okReplay}"
   const val okReplayEspresso = "com.airbnb.okreplay:espresso:${Versions.okReplay}"

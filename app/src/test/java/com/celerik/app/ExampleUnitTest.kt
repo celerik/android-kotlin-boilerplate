@@ -1,4 +1,4 @@
-package com.celerik.android_kotlin_boilerplate
+package com.celerik.app
 
 import org.junit.Test
 

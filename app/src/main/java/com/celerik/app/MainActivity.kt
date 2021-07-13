@@ -1,8 +1,8 @@
-package com.celerik.android_kotlin_boilerplate
+package com.celerik.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.celerik.android_kotlin_boilerplate.databinding.ActivityMainBinding
+import com.celerik.app.databinding.ActivityMainBinding
 import com.celerik.components.utils.viewBinding
 
 class MainActivity : AppCompatActivity() {

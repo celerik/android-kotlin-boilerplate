@@ -1,4 +1,4 @@
-rootProject.name = "android-kotlin-boilerplate"
+rootProject.name = "app"
 
 include(":app")
 include(":components")
