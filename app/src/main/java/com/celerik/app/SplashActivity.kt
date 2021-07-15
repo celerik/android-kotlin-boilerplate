@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.app.base.others.ONE_SECOND_IN_MILLISECONDS
 import com.app.core.EventObserver
 import com.celerik.app.data.SplashNews
 import com.celerik.app.databinding.ActivitySplashBinding
@@ -39,7 +40,7 @@ class SplashActivity : AppCompatActivity() {
       {
         viewModel.onViewActive()
       },
-      100
+      ONE_SECOND_IN_MILLISECONDS
     )
   }
 
