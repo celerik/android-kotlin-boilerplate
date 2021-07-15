@@ -97,7 +97,9 @@ android {
 
 
 dependencies {
+  implementation(project(":base"))
   implementation(project(":components"))
+  implementation(project(":core"))
 
   implementation(Libraries.multidex)
 

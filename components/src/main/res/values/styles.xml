@@ -1,0 +1,29 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  
+  <!--region Dialogs-->
+  <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">false</item>
+    <item name="android:textColorPrimary">@color/grey_blackish</item>
+    <item name="buttonBarNegativeButtonStyle">@style/ButtonNegativeDialog</item>
+    <item name="buttonBarPositiveButtonStyle">@style/ButtonPositiveDialog</item>
+  </style>
+
+  <style name="ButtonPositiveDialog" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <item name="android:textColor">@color/aquamarine</item>
+  </style>
+
+  <style name="ButtonNegativeDialog" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <item name="android:textColor">@color/red</item>
+  </style>
+  <!--endregion-->
+
+</resources>

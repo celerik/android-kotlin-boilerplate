@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="stroke_width_dots_small_100">1dp</dimen>
+  <dimen name="elevation_toolbar_small_100">4dp</dimen>
+  <dimen name="radius_background_small_100">6dp</dimen>
+  <dimen name="step_granularity_text_view_small_100">2sp</dimen>
+
+  <dimen name="size_tag_launch_normal_100">32dp</dimen>
+  <dimen name="size_progress_bar_normal_100">50dp</dimen>
+
+  <dimen name="height_product_sticker_100">23dp</dimen>
+  <dimen name="width_product_sticker_100">140dp</dimen>
+
+  <dimen name="height_button_small_100">25dp</dimen>
+  <dimen name="height_button_normal_100">28dp</dimen>
+  <dimen name="height_button_normal_200">40dp</dimen>
+  <dimen name="height_button_normal_400">49dp</dimen>
+  <dimen name="height_button_normal_600">60dp</dimen>
+  <dimen name="height_button_normal_800">70dp</dimen>
+  <dimen name="height_picker_normal_100">40dp</dimen>
+  <dimen name="height_edit_text_normal_100">50dp</dimen>
+  <dimen name="height_toolbar_views_normal_100">40dp</dimen>
+
+  <dimen name="width_button_normal_100">100dp</dimen>
+
+  <dimen name="spacing_small_50">0.5dp</dimen>
+  <dimen name="spacing_small_100">1dp</dimen>
+  <dimen name="spacing_small_200">2dp</dimen>
+  <dimen name="spacing_small_400">4dp</dimen>
+  <dimen name="spacing_small_600">6dp</dimen>
+  <dimen name="spacing_small_800">8dp</dimen>
+  <dimen name="spacing_normal_100">10dp</dimen>
+  <dimen name="spacing_normal_200">12dp</dimen>
+  <dimen name="spacing_normal_400">14dp</dimen>
+  <dimen name="spacing_normal_600">16dp</dimen>
+  <dimen name="spacing_normal_800">18dp</dimen>
+  <dimen name="spacing_large_100">20dp</dimen>
+  <dimen name="spacing_large_200">24dp</dimen>
+  <dimen name="spacing_large_300">27dp</dimen>
+  <dimen name="spacing_large_400">30dp</dimen>
+  <dimen name="spacing_large_600">32dp</dimen>
+  <dimen name="spacing_large_700">35dp</dimen>
+  <dimen name="spacing_large_800">38dp</dimen>
+  <dimen name="spacing_huge_100">40dp</dimen>
+  <dimen name="spacing_huge_200">42dp</dimen>
+  <dimen name="spacing_huge_800">48dp</dimen>
+
+  <dimen name="text_size_small_100">8sp</dimen>
+  <dimen name="text_size_small_200">9sp</dimen>
+  <dimen name="text_size_normal_100">10sp</dimen>
+  <dimen name="text_size_normal_200">13sp</dimen>
+  <dimen name="text_size_normal_400">20sp</dimen>
+  <dimen name="text_size_normal_600">26sp</dimen>
+
+  <!-- Typography -->
+  <dimen name="text_size_headline_1">24sp</dimen>
+  <dimen name="text_size_headline_2">18sp</dimen>
+  <dimen name="text_size_subtitle_1">16sp</dimen>
+  <dimen name="text_size_subtitle_2">14sp</dimen>
+  <dimen name="text_size_subtitle_3">12sp</dimen>
+</resources>

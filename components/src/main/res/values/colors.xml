@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">@color/grey_pale_light</color>
+  <color name="colorPrimaryDark">@color/grey_blackish</color>
+  <color name="colorAccent">@color/blue_dark</color>
+
+  <color name="black">#000000</color>
+  <color name="red">#ee417f</color>
+  <color name="aquamarine">#00d4c8</color>
+  <color name="grey_pale_light">#f8f8f9</color>
+  <color name="grey_blackish">#8a000000</color>
+  <color name="blue_dark">#012C3D</color>
+</resources>

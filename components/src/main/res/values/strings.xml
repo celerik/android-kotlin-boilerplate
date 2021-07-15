@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="no_internet_title">¡Lo sentimos, no tienes conexión!</string>
+  <string name="no_internet_description">Por favor verifica tu conexión a internet, o intenta conectarte a una red Wi-Fi.</string>
+  <string name="no_internet_retry_button">Reintentar</string>
+</resources>

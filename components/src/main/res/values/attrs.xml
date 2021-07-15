@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="PickerView">
+    <attr name="quantity" format="string" />
+    <attr name="unitOfMeasurement" format="string" />
+  </declare-styleable>
+  <declare-styleable name="SearchView">
+    <attr name="android:hint" format="string" />
+  </declare-styleable>
+  <declare-styleable name="CustomToolbar">
+    <attr name="showBackButton" format="boolean" />
+  </declare-styleable>
+  <declare-styleable name="HeaderButtonView">
+    <attr name="android:text" format="string" />
+  </declare-styleable>
+  <declare-styleable name="EditClientHeaderView">
+    <attr name="android:text" format="string" />
+  </declare-styleable>
+  <declare-styleable name="CouponView">
+    <attr name="subtotal" format="string" />
+    <attr name="couponCode" format="string" />
+    <attr name="discount" format="string" />
+    <attr name="total" format="string" />
+  </declare-styleable>
+  <declare-styleable name="DashedDivider">
+    <attr name="color" format="color" />
+    <attr name="dashLength" format="dimension" />
+    <attr name="dashGap" format="dimension" />
+    <attr name="dashThickness" format="dimension" />
+    <attr name="orientation" format="enum">
+      <enum name="horizontal" value="0" />
+      <enum name="vertical" value="1" />
+    </attr>
+  </declare-styleable>
+  <declare-styleable name="NoConnectionView">
+    <attr name="primaryButtonText" format="string" />
+    <attr name="showSecondaryButton" format="boolean" />
+  </declare-styleable>
+</resources>

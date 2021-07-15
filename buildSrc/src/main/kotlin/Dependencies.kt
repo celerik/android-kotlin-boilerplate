@@ -36,6 +36,8 @@ object Versions {
 
   const val glide = "4.12.0"
 
+  const val javaInject = "1"
+
   const val mockk = "1.11.0"
 
   const val okHttpBoM = "4.9.1"
@@ -100,6 +102,7 @@ object Libraries {
   const val lifeCycleProcess = "androidx.lifecycle:lifecycle-process:${Versions.lifeCycle}"
   const val lifeCycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifeCycle}"
 
+  const val javaInject = "javax.inject:javax.inject:${Versions.javaInject}"
   const val mockk = "io.mockk:mockk:${Versions.mockk}"
   const val kotlinTest = "org.jetbrains.kotlin:kotlin-test:${Versions.kotlin}"
   const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
