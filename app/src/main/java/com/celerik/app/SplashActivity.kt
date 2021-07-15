@@ -36,10 +36,10 @@ class SplashActivity : AppCompatActivity() {
     showVersionName()
 
     initializeSubscription()
-    initializeMainActivity()
+    initializeApp()
   }
 
-  private fun initializeMainActivity() {
+  private fun initializeApp() {
     Handler(Looper.getMainLooper()).postDelayed(
       {
         viewModel.onViewActive()
