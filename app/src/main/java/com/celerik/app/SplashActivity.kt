@@ -33,9 +33,13 @@ class SplashActivity : AppCompatActivity() {
 
     setContentView(binding.root)
 
-    initializeSubscription()
     showVersionName()
 
+    initializeSubscription()
+    initializeMainActivity()
+  }
+
+  private fun initializeMainActivity() {
     Handler(Looper.getMainLooper()).postDelayed(
       {
         viewModel.onViewActive()
@@ -53,8 +57,8 @@ class SplashActivity : AppCompatActivity() {
   }
 
   private fun handleAppInitialized() {
-    val homeIntent = Intent(this, MainActivity::class.java)
-    startActivity(homeIntent)
+    val mainIntent = Intent(this, MainActivity::class.java)
+    startActivity(mainIntent)
     finish()
   }
 
