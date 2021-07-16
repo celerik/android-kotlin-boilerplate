@@ -25,10 +25,10 @@ git clone https://github.com/celerik/android-kotlin-boilerplate.git
 ## Build variants
 Herein you can find multiple targets that the app takes into account:
 
-|         |Staging    |Production  |
-|---------|-----------|------------|
-|Internal |`Debug`    |`Debug`     |
-|External |`Release`  |`Release`   |
+|          |Staging    |Production  |
+|----------|-----------|------------|
+|`Internal`|Debug      |Debug       |
+|`External`|Release    |Release     |
 
  Where the following formed variants are built for staging purposes:
 - stagingInternalDebug
@@ -43,6 +43,9 @@ Herein you can find multiple targets that the app takes into account:
 **_Sidenote:_**  environments with _Internal_ keyword, for example, could set a specific timeout for debug servers, whereas environments with _External_ keyword could have another timeout according to production servers' features. In the other hand, environments with _Debug_ keyword, could keep a debug logger activated; whereas environments with _Release_ keyword don't.
 
 ## Screenshots
+
+![Screenshot_1626474458](https://user-images.githubusercontent.com/25390317/126014560-dbd18cf5-75f9-4e0a-a72e-9b63e6db0bf4.png)
+![Screenshot_1626474925](https://user-images.githubusercontent.com/25390317/126014713-1c25cf42-7307-4d05-b121-5be96abdf1a4.png)
 
 
 
