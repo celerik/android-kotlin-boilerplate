@@ -29,4 +29,8 @@ class CelerikLogger @Inject constructor(tree: Timber.Tree) : Logger {
   override fun e(message: String, throwable: Throwable?) {
     Timber.e(throwable, message)
   }
+
+  override fun http(url: String, method: String, request: String?, response: String?, statusCode: Int?) {
+    Timber.d("$method: $url, $request\n$response\n$statusCode")
+  }
 }

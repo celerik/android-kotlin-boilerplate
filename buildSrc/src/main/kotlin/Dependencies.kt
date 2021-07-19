@@ -8,7 +8,7 @@ object Versions {
   const val jacoco = "0.8.7"
 
   //AndroidX
-  const val appCompat = "1.2.0"
+  const val appCompat = "1.3.0"
   const val core = "1.3.2"
   const val jUnitExtKtx = "1.1.2"
   const val testCoreKtx = "1.3.0"

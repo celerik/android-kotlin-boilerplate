@@ -1,5 +1,6 @@
 package com.app.core.network
 
+import com.app.base.data.HttpObject
 import com.app.base.interfaces.Logger
 import com.app.core.exceptions.NoConnectionException
 import okhttp3.Interceptor
@@ -32,6 +33,18 @@ class ServerInterceptor @Inject constructor(private val logger: Logger) : Interc
         } catch (e: Exception) {
           ServerException("UNKNOWN", "GENERIC ERROR", httpCode, "$request $response")
         }
+
+        val infoRequest = HttpObject(
+          method, endpoint, responseBody.toString(), httpCode
+        )
+
+        logger.http(
+          endpoint,
+          method,
+          infoRequest.toString(),
+          response = response.toString(),
+          statusCode = httpCode
+        )
 
         logger.e("Server Exception ${serverException.message}", serverException)
 

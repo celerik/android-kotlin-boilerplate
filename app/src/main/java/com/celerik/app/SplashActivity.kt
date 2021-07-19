@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.app.base.interfaces.Logger
 import com.app.base.others.ONE_SECOND_IN_MILLISECONDS
 import com.app.core.EventObserver
 import com.celerik.app.data.SplashNews
@@ -21,6 +22,9 @@ import javax.inject.Inject
 class SplashActivity : AppCompatActivity() {
 
   @Inject
+  lateinit var logger: Logger
+
+  @Inject
   lateinit var viewModelFactory: ViewModelProvider.Factory
 
   private val viewModel: SplashViewModel by viewModels { viewModelFactory }
@@ -29,6 +33,7 @@ class SplashActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     AndroidInjection.inject(this)
+
     super.onCreate(savedInstanceState)
 
     setContentView(binding.root)
@@ -37,6 +42,8 @@ class SplashActivity : AppCompatActivity() {
 
     initializeSubscription()
     initializeApp()
+
+    logger.d("SplashActivity started")
   }
 
   private fun initializeApp() {
