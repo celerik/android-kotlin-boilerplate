@@ -15,7 +15,7 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * Gradle’s Kotlin _DSL_.
 * _SonarQube_ configuration files.
 * _JaCoCo_ maven plugin to generate test coverage reports.
-* _ktlint_ for static code analysis.  
+* _ktlint_ for static code analysis.
 
 ## Installation  
 Clone this repository and import it into **Android Studio**  
@@ -45,9 +45,9 @@ Herein you can find multiple targets that the app takes into account:
   
 ## Others  
 1. Project's CodeStyle can be found [here](docs/codestyle.md).  
-2. Coding utilities can be found [here](docs/utilities.md).  
+2. Coding utilities file can be found [here](docs/utilities.md).
   
 ## Screenshots  
   
-![Screenshot_1626474458](https://user-images.githubusercontent.com/25390317/126014560-dbd18cf5-75f9-4e0a-a72e-9b63e6db0bf4.png)  
+![Screenshot_1626474458](https://user-images.githubusercontent.com/25390317/126014560-dbd18cf5-75f9-4e0a-a72e-9b63e6db0bf4.png)
 ![Screenshot_1626474925](https://user-images.githubusercontent.com/25390317/126014713-1c25cf42-7307-4d05-b121-5be96abdf1a4.png)

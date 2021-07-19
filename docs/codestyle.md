@@ -1,4 +1,4 @@
-# Android Code Style
+# Android CodeStyle
 
 ## Description
 This document serves as the definition of Celerik’s Android coding standards for source code in the Kotlin Programming Language. The code style described below is inspired by Google's and Kotlin's style guides, as well as our own formed standard according to the experiences we have had and will have in our team (i.e. code reviews).
