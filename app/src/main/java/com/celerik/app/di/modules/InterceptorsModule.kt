@@ -1,7 +1,7 @@
 package com.celerik.app.di.modules
 
-import com.celerik.app.network.NetworkConnectivityInterceptor
 import com.app.core.network.ServerInterceptor
+import com.celerik.app.network.NetworkConnectivityInterceptor
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoSet

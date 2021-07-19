@@ -1,8 +1,8 @@
 package com.celerik.app.di.modules
 
 import androidx.lifecycle.ViewModel
-import com.celerik.app.viewModels.SplashViewModel
 import com.app.core.di.ViewModelKey
+import com.celerik.app.viewModels.SplashViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

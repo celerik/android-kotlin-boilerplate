@@ -9,7 +9,4 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
   private val logger: Logger,
   private val appResources: AppResources,
-) : BaseViewModel(), LifecycleObserver {
-
-
-}
+) : BaseViewModel(), LifecycleObserver

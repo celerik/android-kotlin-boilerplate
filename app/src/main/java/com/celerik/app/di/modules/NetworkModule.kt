@@ -2,18 +2,16 @@ package com.celerik.app.di.modules
 
 import androidx.annotation.VisibleForTesting
 import com.app.base.interfaces.Logger
-import com.celerik.app.BuildConfig
 import com.app.core.di.BasePath
 import com.app.core.di.OkHttpClientBasic
 import com.app.core.di.RetrofitBasic
 import com.app.core.di.RetrofitCelerik
 import com.app.core.di.RetrofitNullSerializationEnabled
 import com.app.core.network.ServerInterceptor
+import com.celerik.app.BuildConfig
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
-import java.util.concurrent.TimeUnit
-import javax.inject.Singleton
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -21,6 +19,8 @@ import okreplay.OkReplayInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
+import java.util.concurrent.TimeUnit
+import javax.inject.Singleton
 
 private const val FLAVOR_TARGET_INTERNAL = "internal"
 private const val EXTERNAL_REQUEST_TIMEOUT_IN_SECONDS = 60L

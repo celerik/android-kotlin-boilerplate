@@ -1,7 +1,7 @@
 package com.celerik.app.di.modules
 
-import com.celerik.app.data.ResolveIntentImpl
 import com.app.core.interfaces.IntentResolver
+import com.celerik.app.data.ResolveIntentImpl
 import dagger.Module
 import dagger.Provides
 

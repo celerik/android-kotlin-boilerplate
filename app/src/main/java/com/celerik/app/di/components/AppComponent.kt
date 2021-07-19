@@ -5,11 +5,11 @@ import com.app.core.CoreComponent
 import com.celerik.app.CelerikApp
 import com.celerik.app.di.modules.ActivityModule
 import com.celerik.app.di.modules.BaseModule
+import com.celerik.app.di.modules.CelerikAppModule
+import com.celerik.app.di.modules.CelerikUseCasesModule
 import com.celerik.app.di.modules.FragmentModule
 import com.celerik.app.di.modules.IntentsModule
 import com.celerik.app.di.modules.LoggerModule
-import com.celerik.app.di.modules.CelerikAppModule
-import com.celerik.app.di.modules.CelerikUseCasesModule
 import com.celerik.app.di.modules.NetworkModule
 import dagger.BindsInstance
 import dagger.Component

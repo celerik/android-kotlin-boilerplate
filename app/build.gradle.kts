@@ -95,7 +95,6 @@ android {
   }
 }
 
-
 dependencies {
   implementation(project(":base"))
   implementation(project(":components"))
@@ -106,7 +105,6 @@ dependencies {
   kapt(AnnotationProcessors.dagger)
   kapt(AnnotationProcessors.daggerAndroid)
   kapt(AnnotationProcessors.moshiCodegen)
-
 
   implementation(Libraries.kotlinJDK)
   implementation(Libraries.appcompat)
@@ -127,7 +125,6 @@ dependencies {
 
   implementation(Libraries.moshi)
 
-
   implementation(Libraries.retrofit)
   implementation(Libraries.retrofitMoshi)
   implementation(Libraries.retrofitRxJava)
@@ -147,7 +144,6 @@ dependencies {
   Libraries.suiteTest.forEach { testImplementation(it) }
   testRuntimeOnly(Libraries.jUnit5Engine)
 
-
   debugImplementation(Libraries.okReplay)
   releaseImplementation(Libraries.okReplayNoop)
   androidTestImplementation(Libraries.okReplayEspresso)
@@ -162,7 +158,6 @@ dependencies {
   }
   androidTestUtil(Libraries.orchestrator)
 }
-
 
 fun getNewVersionCode(): Int {
   val versionCode = if (project.hasProperty("version_code")) {

@@ -2,13 +2,13 @@ package com.app.core.network
 
 import com.app.base.interfaces.Logger
 import com.app.core.exceptions.NoConnectionException
+import okhttp3.Interceptor
+import okhttp3.Response
+import org.json.JSONObject
 import java.io.IOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 import javax.inject.Inject
-import okhttp3.Interceptor
-import okhttp3.Response
-import org.json.JSONObject
 
 class ServerInterceptor @Inject constructor(private val logger: Logger) : Interceptor {
 

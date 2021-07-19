@@ -3,9 +3,9 @@ package com.celerik.app.useCases
 import com.app.base.interfaces.SingleUseCase
 import com.app.core.di.OkHttpClientBasic
 import io.reactivex.rxjava3.core.Single
-import javax.inject.Inject
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import javax.inject.Inject
 
 private const val SETTINGS_HOST = "https://www.google.com"
 

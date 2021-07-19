@@ -16,5 +16,4 @@ object LoggerModule {
     val tree = CelerikDebugTree()
     return CelerikLogger(tree)
   }
-
 }

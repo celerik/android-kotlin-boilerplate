@@ -45,6 +45,9 @@ Herein you can find multiple targets that the app takes into account:
 ## Project's CodeStyle
 It can be found [here](docs/codestyle.md).
 
+## Project's utilities
+It can be found [here](docs/utilities.md).
+
 ## Screenshots
 
 ![Screenshot_1626474458](https://user-images.githubusercontent.com/25390317/126014560-dbd18cf5-75f9-4e0a-a72e-9b63e6db0bf4.png)

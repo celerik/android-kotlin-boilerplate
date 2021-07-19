@@ -1,3 +1,4 @@
+// ktlint-disable filename
 package com.app.core.qualifiers
 
 import javax.inject.Qualifier

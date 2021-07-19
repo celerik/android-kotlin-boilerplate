@@ -3,9 +3,9 @@ package com.celerik.app.di.modules
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
+import com.app.core.interfaces.AppResources
 import com.celerik.app.data.CelerikResources
 import com.celerik.app.di.ViewModelFactory
-import com.app.core.interfaces.AppResources
 import dagger.Binds
 import dagger.Module
 

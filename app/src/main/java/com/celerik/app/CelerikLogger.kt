@@ -1,8 +1,8 @@
 package com.celerik.app
 
 import com.app.base.interfaces.Logger
-import javax.inject.Inject
 import timber.log.Timber
+import javax.inject.Inject
 
 class CelerikLogger @Inject constructor(tree: Timber.Tree) : Logger {
 

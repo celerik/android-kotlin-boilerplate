@@ -4,20 +4,20 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.base.interfaces.Logger
 import com.app.base.interfaces.SingleUseCase
-import com.app.core.Event
-import com.celerik.app.R
-import com.celerik.app.data.SplashNews
 import com.app.core.BaseViewModel
+import com.app.core.Event
 import com.app.core.exceptions.NoConnectionException
 import com.app.core.interfaces.AppResources
 import com.app.core.network.ServerException
 import com.app.core.qualifiers.VerifyInternet
+import com.celerik.app.R
+import com.celerik.app.data.SplashNews
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.schedulers.Schedulers
+import retrofit2.HttpException
 import java.net.ConnectException
 import javax.inject.Inject
-import retrofit2.HttpException
 
 class SplashViewModel @Inject constructor(
   private val logger: Logger,
@@ -57,7 +57,6 @@ class SplashViewModel @Inject constructor(
         }
     }
   }
-
 
   private fun handleError(throwable: Throwable) {
     when (throwable) {

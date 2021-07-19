@@ -9,5 +9,4 @@ import javax.inject.Inject
 class CelerikAppViewModel @Inject constructor(
   private val logger: Logger,
   private val appResources: AppResources,
-) : BaseViewModel(), LifecycleObserver {
-}
+) : BaseViewModel(), LifecycleObserver
