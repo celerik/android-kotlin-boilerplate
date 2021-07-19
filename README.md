@@ -16,6 +16,7 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * _SonarQube_ configuration files.
 * _JaCoCo_ maven plugin to generate test coverage reports.
 * _ktlint_ for static code analysis.
+* LeakCanary for memory leaks detection.
 
 ## Installation  
 Clone this repository and import it into **Android Studio**  
@@ -26,10 +27,10 @@ git clone https://github.com/celerik/android-kotlin-boilerplate.git
 ## Build variants  
 Herein you can find multiple targets that the app takes into account:  
   
-|          |Staging |Production |  
+|          |Staging    |Production  |
 |----------|-----------|------------|  
-|`Internal`|Debug |Debug |  
-|`External`|Release |Release |  
+|`Internal`|Debug      |Debug       |
+|`External`|Release     |Release    |
   
  Where the following formed variants are built for staging purposes:  
 - stagingInternalDebug  
