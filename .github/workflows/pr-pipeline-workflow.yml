@@ -1,0 +1,38 @@
+name: PR Pipeline Workflow
+
+# Execute PR Pipeline Workflow on any pull requests
+on: pull_request
+
+jobs:
+  ##############################################################
+  # Unit Test Job:
+  # Install dependencies, run Kotlin linter and execute unit tests
+  ##############################################################
+  run_checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Set up Ruby 2.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+
+      - name: Install Dependencies
+        run: gem install bundler:2.2.11 && bundle install
+
+      - name: Run Fastlane Unit Test Lane
+        run: bundle exec fastlane run_checks
+
+      - name: JUnit Report Action
+        uses: mikepenz/action-junit-report@v2
+        if: ${{ always() }}
+        with:
+          report_paths: '**/test-results/**/TEST-*.xml'
