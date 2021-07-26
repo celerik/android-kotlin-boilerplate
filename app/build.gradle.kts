@@ -99,6 +99,7 @@ dependencies {
   implementation(project(":base"))
   implementation(project(":components"))
   implementation(project(":core"))
+  implementation(project(":core-test"))
 
   implementation(Libraries.multidex)
 

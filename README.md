@@ -2,12 +2,12 @@
 # Welcome to Android Kotlin Boilerplate!  
   
 ## Getting Started  
-Android Kotlin Boilerplate refers to standardized methods, procedures and files that may be used over again  for efficiency developing new Android mobile applications.  
+Android Kotlin Boilerplate refers to standardized methods, procedures and files that may be used over again for efficiency developing new Android mobile applications.  
   
 ## What's included  
 * An Android app with _modular architecture_ and _MVVM_ architectural pattern.
-* Splash screen with app version and empty MainActivity.
-* Network connectivity interceptor for HTTP requests.
+* _Splash screen_ with app version and empty _MainActivity_.
+* _Network connectivity interceptor_ for HTTP requests.
 * _Dagger2_ for dependencies injection.
 * _ViewBinding_ for activities and fragments.
 * _Timber_ for logging purposes.
@@ -16,7 +16,9 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * _SonarQube_ configuration files.
 * _JaCoCo_ maven plugin to generate test coverage reports.
 * _ktlint_ for static code analysis.
-* LeakCanary for memory leaks detection.
+* _LeakCanary_ for memory leaks detection.
+* _Fastlane_ for CI/CD tasks.
+* _Github_ workflows for automated PR actions.
 
 ## Installation  
 Clone this repository and import it into **Android Studio**  
