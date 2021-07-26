@@ -1,0 +1,23 @@
+fastlane_version "2.168.0"
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Run Checks for the app"
+  lane :run_checks do
+    gradle(task: "ktlintcheck")
+    unit_test
+  end
+
+
+###### Private lanes ######
+
+ desc "Execute unit tests"
+  private_lane :unit_test do
+    gradle(task: "app:checkCoverage")
+    gradle(task: "base:checkCoverage")
+    gradle(task: "core:testDebugUnitTest")
+   end
+
+end

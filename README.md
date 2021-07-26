@@ -47,7 +47,8 @@ Herein you can find multiple targets that the app takes into account:
 ## Others  
 1. Project's CodeStyle can be found [here](docs/codestyle.md).  
 2. Coding utilities file can be found [here](docs/utilities.md).
-  
+3. CI/CD documentation can be found [here](docs/cicd.md).  
+
 ## Screenshots  
   
 ![Screenshot_1626474458](https://user-images.githubusercontent.com/25390317/126014560-dbd18cf5-75f9-4e0a-a72e-9b63e6db0bf4.png)
