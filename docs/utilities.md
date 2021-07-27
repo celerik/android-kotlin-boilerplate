@@ -6,6 +6,7 @@ This document shows multiple commands executions and utilities for coding in the
 
 - [ktlint](#ktlint)
 - [JaCoCo](#jacoco)
+- [Dokka](#dokka)
 
 ## ktlint
 Executing _ktlint_ command for Kotlin linter with built-in formatter:
@@ -14,3 +15,7 @@ Executing _ktlint_ command for Kotlin linter with built-in formatter:
 ## JaCoCo
 Executing _JaCoCo_ command for measuring code coverage:
 ```./gradlew checkCoverage ```
+
+## Dokka
+Execution _Dokka_ command for generating Kotlin documentation in HTML format:
+```./gradlew dokkaHtml ```

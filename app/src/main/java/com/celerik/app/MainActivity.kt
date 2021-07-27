@@ -8,6 +8,11 @@ import com.celerik.components.utils.viewBinding
 import dagger.android.AndroidInjection
 import javax.inject.Inject
 
+/**
+ * Represents main activity.
+ *
+ * This is the orchestrator of app's views.
+ */
 class MainActivity : AppCompatActivity() {
 
   @Inject

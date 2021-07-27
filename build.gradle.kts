@@ -10,6 +10,7 @@ buildscript {
   dependencies {
     classpath("com.android.tools.build:gradle:${Versions.gradle}")
     classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
+    classpath("org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}")
     classpath("org.jlleitschuh.gradle:ktlint-gradle:${Versions.gradleKlint}")
     classpath("de.mannodermaus.gradle.plugins:android-junit5:${Versions.androidJUnit5}")
     classpath("org.jacoco:org.jacoco.core:${Versions.jacoco}")
@@ -17,7 +18,8 @@ buildscript {
 }
 
 plugins {
-  id("org.sonarqube") version "3.1.1"
+  id("org.sonarqube") version Versions.sonarqube
+  id("org.jetbrains.dokka") version Versions.dokka
 }
 
 allprojects {
@@ -58,6 +60,7 @@ subprojects {
 
   apply(plugin = "jacoco")
   apply(plugin = "plugins.jacoco-report")
+  apply(plugin = "org.jetbrains.dokka")
 
   plugins.withType<JacocoPlugin> {
     the<JacocoPluginExtension>().apply {
@@ -65,6 +68,10 @@ subprojects {
       reportsDir = file("$buildDir/jacoco/reports")
     }
   }
+}
+
+tasks.dokkaHtmlMultiModule.configure {
+  outputDirectory.set(buildDir.resolve("dokkaCustomMultiModuleOutput"))
 }
 
 tasks.register("clean", Delete::class.java) {

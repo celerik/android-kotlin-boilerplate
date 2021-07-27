@@ -7,6 +7,10 @@ object Versions {
   const val androidJUnit5 = "1.7.1.1"
   const val jacoco = "0.8.7"
 
+  const val sonarqube = "3.1.1"
+
+  const val dokka = "1.5.0"
+
   //AndroidX
   const val appCompat = "1.3.0"
   const val core = "1.3.2"

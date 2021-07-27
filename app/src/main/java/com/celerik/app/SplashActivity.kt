@@ -19,6 +19,11 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.android.AndroidInjection
 import javax.inject.Inject
 
+/**
+ * Represents splash activity.
+ *
+ * This is the first screen the user will watch.
+ */
 class SplashActivity : AppCompatActivity() {
 
   @Inject

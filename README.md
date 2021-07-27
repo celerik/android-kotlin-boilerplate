@@ -18,7 +18,9 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * _ktlint_ for static code analysis.
 * _LeakCanary_ for memory leaks detection.
 * _Fastlane_ for CI/CD tasks.
+* _SonarCloud_ for static code analysis.
 * _Github_ workflows for automated PR actions.
+* _dokka_ for Kotlin's documentation generation.
 
 ## Installation  
 Clone this repository and import it into **Android Studio**  
@@ -48,7 +50,7 @@ Herein you can find multiple targets that the app takes into account:
   
 ## Others  
 1. Project's CodeStyle can be found [here](docs/codestyle.md).  
-2. Coding utilities file can be found [here](docs/utilities.md).
+2. Project utilities file can be found [here](docs/utilities.md).
 3. CI/CD documentation can be found [here](docs/cicd.md).  
 
 ## Screenshots  
