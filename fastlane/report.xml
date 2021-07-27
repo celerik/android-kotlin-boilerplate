@@ -5,37 +5,37 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.0023338">
+      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.0024142">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.0007509">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.0006645">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: ktlintcheck" time="8.1929773">
+      <testcase classname="fastlane.lanes" name="2: ktlintcheck" time="5.1857251">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: Switch to android unit_test lane" time="0.0019324">
+      <testcase classname="fastlane.lanes" name="3: Switch to android unit_test lane" time="0.0045339">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: app:checkCoverage" time="10.919454">
+      <testcase classname="fastlane.lanes" name="4: app:checkCoverage" time="4.5276609">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: base:checkCoverage" time="6.4195078">
+      <testcase classname="fastlane.lanes" name="5: base:checkCoverage" time="1.9038328">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: core:testDebugUnitTest" time="2.4858637">
+      <testcase classname="fastlane.lanes" name="6: core:testDebugUnitTest" time="2.2595683">
         
       </testcase>
     
