@@ -12,8 +12,7 @@ object LoggerModule {
   @Provides
   @Singleton
   fun providesLoggerImplementation(): Logger {
-    // TODO: change logger tree if is BuildConfig.DEBUG or release
-    val tree = CelerikDebugTree()
+    val tree = CelerikDebugTree() // The logger could be changed according to current environment
     return CelerikLogger(tree)
   }
 }

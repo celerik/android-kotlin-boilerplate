@@ -73,8 +73,8 @@ tasks.register("clean", Delete::class.java) {
 
 sonarqube {
   properties {
-    setProperty("sonar.projectKey", "projectKey")
-    setProperty("sonar.organization", "organization")
+    setProperty("sonar.organization", "celerik")
+    setProperty("sonar.projectKey", "celerik_android-kotlin-boilerplate")
     setProperty("sonar.host.url", "https://sonarcloud.io")
     setProperty("sonar.sourceEncoding", "UTF-8")
   }
