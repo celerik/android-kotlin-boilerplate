@@ -48,6 +48,14 @@ Herein you can find multiple targets that the app takes into account:
   
 **_Sidenote:_**  environments with _Internal_ keyword, for example, could set a specific timeout for debug servers, whereas environments with _External_ keyword could have another timeout according to production servers' features. In the other hand, environments with _Debug_ keyword, could keep a debug logger activated; whereas environments with _Release_ keyword don't.  
   
+## Debug app signing
+In order to sign your debug app build using _debug-keystore.jks_ keystore, these are the credentials you will have to take in mind:
+   
+`STORE_FILE = ./app/debug-keystore.jks`
+`STORE_PASSWORD = android`
+`KEY_ALIAS = android_celerik`
+`KEY_PASSWORD = android`
+  
 ## Others  
 1. Project's CodeStyle can be found [here](docs/codestyle.md).  
 2. Project utilities file can be found [here](docs/utilities.md).
