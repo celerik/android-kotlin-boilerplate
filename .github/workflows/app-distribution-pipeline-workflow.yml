@@ -1,6 +1,6 @@
 name: App Distribution Tag Workflow
 
-# Execute PR Pipeline Workflow on pull requests to develop
+# Execute Pipeline Workflow on pushing tags with the regex specified
 on:
   push:
     tags:
@@ -41,7 +41,7 @@ jobs:
         run: bundle exec fastlane distribute_staging build_number:${{ steps.build_data.outputs.build_number }} version_name:${{ steps.build_data.outputs.build_name }}
         env:
           ENCODED_KEY: ${{ secrets.SIGNING_KEY_STAGING}}
-          STORE_FILE: ${{ github.workspace }}/-keystore.jks
+          STORE_FILE: ${{ github.workspace }}/debug-keystore.jks
           KEY_ALIAS: ${{ secrets.ALIAS_STAGING }}
           STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD_STAGING }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD_STAGING }}

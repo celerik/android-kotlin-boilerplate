@@ -19,7 +19,7 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * _LeakCanary_ for memory leaks detection.
 * _Fastlane_ for CI/CD tasks.
 * _SonarCloud_ for static code analysis.
-* _Github_ workflows for automated PR actions.
+* _Github_ workflows for automated PR actions and Firebase app distribution.
 * _dokka_ for Kotlin's documentation generation.
 
 ## Installation  
