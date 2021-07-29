@@ -51,7 +51,7 @@ platform :android do
   private_lane :upload_to_firebase_staging do
     sh("curl -sL https://firebase.tools | bash")
     firebase_app_distribution(
-        app: "1:625987584363:android:7e68259c8f75f636bdcc2e",
+        app: "1:625987584363:android:5f8734ddeb49834bbdcc2e",
         groups: "testers",
         release_notes: "",
         firebase_cli_token: "#{ENV['FIREBASE_REFRESH_TOKEN']}",
