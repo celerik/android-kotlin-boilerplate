@@ -30,6 +30,7 @@ platform :android do
 
   desc "Assemble app"
   private_lane :assemble do |options|
+    sh("echo #{ENV['ENCODED_KEY']} | base64 --decode > #{ENV['STORE_FILE']}")
     version_code = options[:build_number]
     version_name = options[:version_name]
     flavor = options[:flavor]
