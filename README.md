@@ -52,8 +52,11 @@ Herein you can find multiple targets that the app takes into account:
 In order to sign your debug app build using _debug-keystore.jks_ keystore, these are the credentials you will have to take in mind:
    
 `STORE_FILE = ./app/debug-keystore.jks`
+
 `STORE_PASSWORD = android`
+
 `KEY_ALIAS = android_celerik`
+
 `KEY_PASSWORD = android`
   
 ## Others  
