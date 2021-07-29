@@ -3,6 +3,7 @@ plugins {
   id("de.mannodermaus.android-junit5")
   id("jacoco")
   id("plugins.jacoco-report")
+  id("com.google.gms.google-services")
   kotlin("android")
   kotlin("kapt")
 }
@@ -23,7 +24,15 @@ android {
     )
     multiDexEnabled = true
   }
-
+  signingConfigs {
+    getByName("debug") {
+      val defaultPassword = "android"
+      keyAlias = "android_celerik"
+      keyPassword = defaultPassword
+      storeFile = file("debug-keystore.jks")
+      storePassword = defaultPassword
+    }
+  }
   buildTypes {
     getByName("release") {
       isMinifyEnabled = true
@@ -106,6 +115,9 @@ dependencies {
   kapt(AnnotationProcessors.dagger)
   kapt(AnnotationProcessors.daggerAndroid)
   kapt(AnnotationProcessors.moshiCodegen)
+
+  implementation(platform(Libraries.firebaseBoM))
+  implementation(Libraries.firebaseAnalytics)
 
   implementation(Libraries.kotlinJDK)
   implementation(Libraries.appcompat)

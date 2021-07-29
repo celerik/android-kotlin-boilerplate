@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "625987584363",
+    "project_id": "android-kotlin-boilerpla-5284d",
+    "storage_bucket": "android-kotlin-boilerpla-5284d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625987584363:android:7e68259c8f75f636bdcc2e",
+        "android_client_info": {
+          "package_name": "com.celerik.app.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625987584363-0qj7506gdm715quiqfe983qbh76qffc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.celerik.app.staging",
+            "certificate_hash": "45ce1fa0132591f067a433f5e4c07ee3b0660ae7"
+          }
+        },
+        {
+          "client_id": "625987584363-lss6tjbbu5vqbej5h3vsh74suclac806.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaI_Ja5j0_B2GHnJWhyF8JBU_oorY0Ttk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625987584363-lss6tjbbu5vqbej5h3vsh74suclac806.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

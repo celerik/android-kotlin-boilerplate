@@ -7,17 +7,55 @@ platform :android do
   desc "Run Checks for the app"
   lane :run_checks do
     gradle(task: "ktlintcheck")
-    unit_test
+    unit_tests
   end
 
+  desc "Distribute the App using Firebase App Distribution"
+  lane :distribute_staging do |options|
+      run_checks
+      commit = last_git_commit
+      version_name_hash = "#{options[:version_name]} - #{commit[:abbreviated_commit_hash]}"
+      assemble(build_number:options[:build_number], version_name:version_name_hash, flavor:"stagingInternal")
+      upload_to_firebase_staging
+  end
 
 ###### Private lanes ######
 
  desc "Execute unit tests"
-  private_lane :unit_test do
+  private_lane :unit_tests do
     gradle(task: "app:checkCoverage")
     gradle(task: "base:checkCoverage")
     gradle(task: "core:testDebugUnitTest")
    end
+
+  desc "Assemble app"
+  private_lane :assemble do |options|
+    version_code = options[:build_number]
+    version_name = options[:version_name]
+    flavor = options[:flavor]
+    build_android_app(
+        task: "assemble",
+        flavor: flavor,
+        build_type: "release",
+        flags: "-Pversion_code=#{version_code} -Pversion_name='#{version_name}'",
+        properties: {
+            "android.injected.signing.store.file" => "#{ENV['STORE_FILE']}",
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+  end
+
+  private_lane :upload_to_firebase_staging do
+    sh("curl -sL https://firebase.tools | bash")
+    firebase_app_distribution(
+        app: "1:625987584363:android:7e68259c8f75f636bdcc2e",
+        groups: "testers",
+        release_notes: "",
+        firebase_cli_token: "#{ENV['FIREBASE_REFRESH_TOKEN']}",
+        firebase_cli_path: "/usr/local/bin/firebase"
+    )
+  end
 
 end

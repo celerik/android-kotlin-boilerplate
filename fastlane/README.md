@@ -21,6 +21,11 @@ or alternatively using `brew install fastlane`
 fastlane android run_checks
 ```
 Run Checks for the app
+### android distribute_staging
+```
+fastlane android distribute_staging
+```
+Distribute the App using Firebase App Distribution
 
 ----
 

@@ -14,6 +14,7 @@ buildscript {
     classpath("org.jlleitschuh.gradle:ktlint-gradle:${Versions.gradleKlint}")
     classpath("de.mannodermaus.gradle.plugins:android-junit5:${Versions.androidJUnit5}")
     classpath("org.jacoco:org.jacoco.core:${Versions.jacoco}")
+    classpath("com.google.gms:google-services:${Versions.googleServices}")
   }
 }
 

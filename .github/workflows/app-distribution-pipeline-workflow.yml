@@ -1,0 +1,48 @@
+name: App Distribution Tag Workflow
+
+# Execute PR Pipeline Workflow on pull requests to develop
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+-Beta'
+
+jobs:
+  ##########################################################
+  # Distribute Job:
+  # Generate APk and upload it to Firebase App Distribution
+  ##########################################################
+  distribute-to-testers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Save Tag as Variable
+        id: build_data
+        run: |
+          echo ::set-output name=build_name::${GITHUB_REF#refs/*/}
+          echo ::set-output name=build_number::${GITHUB_RUN_NUMBER}
+
+      - name: Set up Ruby 2.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+
+      - name: Install Dependencies
+        run: gem install bundler:2.2.11 && bundle install
+
+      - name: Upload to App distribution Staging
+        run: bundle exec fastlane distribute_staging build_number:${{ steps.build_data.outputs.build_number }} version_name:${{ steps.build_data.outputs.build_name }}
+        env:
+          ENCODED_KEY: ${{ secrets.SIGNING_KEY_STAGING}}
+          STORE_FILE: ${{ github.workspace }}/-keystore.jks
+          KEY_ALIAS: ${{ secrets.ALIAS_STAGING }}
+          STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD_STAGING }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD_STAGING }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_REFRESH_TOKEN}}

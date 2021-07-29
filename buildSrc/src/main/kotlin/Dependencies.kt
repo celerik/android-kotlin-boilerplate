@@ -3,6 +3,8 @@ object Versions {
   const val gradle = "4.2.2"
   const val jvmTarget = "1.8"
 
+  const val googleServices = "4.3.8"
+
   const val gradleKlint = "10.0.0"
   const val androidJUnit5 = "1.7.1.1"
   const val jacoco = "0.8.7"
@@ -48,9 +50,10 @@ object Versions {
 
   const val lifeCycle = "2.3.1"
 
+  const val firebaseBoM = "28.3.0"
+
   const val leakCanary = "2.7"
   const val timber = "4.7.1"
-  const val sentry = "4.3.0"
 
   const val jUnit5 = "5.7.1"
 
@@ -105,6 +108,9 @@ object Libraries {
   const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
   const val lifeCycleProcess = "androidx.lifecycle:lifecycle-process:${Versions.lifeCycle}"
   const val lifeCycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifeCycle}"
+
+  const val firebaseBoM = "com.google.firebase:firebase-bom:${Versions.firebaseBoM}"
+  const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx"
 
   const val javaInject = "javax.inject:javax.inject:${Versions.javaInject}"
   const val mockk = "io.mockk:mockk:${Versions.mockk}"
