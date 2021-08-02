@@ -1,4 +1,8 @@
 
+<img src="https://www.celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik"  width="300" height="80" class="center"/>
+
+ [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=code_smells)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=ncloc)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate)
+
 # Welcome to Android Kotlin Boilerplate!  
   
 ## Getting Started  
