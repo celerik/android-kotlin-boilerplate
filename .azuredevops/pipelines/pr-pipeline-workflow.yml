@@ -1,0 +1,65 @@
+name: PR Pipeline Workflow
+
+# Execute PR Pipeline Workflow on any pull requests.
+# This configuration was performed as a Azure's Build Policy
+
+resources:
+  - repo: self
+
+jobs:
+  ##############################################################
+  # Unit Test Job:
+  # Install dependencies, run Kotlin linter and execute unit tests
+  ##############################################################
+  - job: run_checks
+
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - task: JavaToolInstaller@0
+        displayName: 'Set up JDK'
+        inputs:
+          versionSpec: '11'
+          jdkArchitectureOption: 'x64'
+          jdkSourceOption: 'PreInstalled'
+
+      - task: SonarCloudPrepare@1
+        displayName: 'Set up SonarCloud'
+        inputs:
+          SonarCloud: 'sc-sonar'
+          organization: 'celerikdevops'
+          scannerMode: 'CLI'
+          configMode: 'file'
+          configFile: '.sonarcloud.properties'
+
+      - task: SonarCloudAnalyze@1
+        displayName: 'Analyze source code'
+
+
+      - task: SonarCloudPublish@1
+        displayName: 'Publish SonarCloud Results'
+        inputs:
+          pollingTimeoutSec: '3000'
+            
+      - task: UseRubyVersion@0
+        displayName: 'Set up Ruby 2.7'
+        inputs:
+          versionSpec: '2.7'
+
+      - task: CmdLine@2
+        displayName: 'Install Dependencies'
+        inputs:
+          script: 'gem install bundler:2.2.11 && bundle install'
+
+      - task: CmdLine@2
+        displayName: 'Run Fastlane run_checks Lane'
+        inputs:
+          script: 'bundle exec fastlane run_checks'
+
+      - task: PublishTestResults@2
+        displayName: 'Publish JUnit Test Results'
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '**/test-results/**/TEST-*.xml' 
+          failTaskOnFailedTests: true
