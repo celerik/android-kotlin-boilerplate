@@ -1,4 +1,8 @@
 
+<img src="https://www.celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik"  width="300" height="80"/>
+
+ [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=code_smells)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=celerik_android-kotlin-boilerplate&metric=ncloc)](https://sonarcloud.io/dashboard?id=celerik_android-kotlin-boilerplate)
+
 # Welcome to Android Kotlin Boilerplate!  
   
 ## Getting Started  
@@ -20,6 +24,7 @@ Android Kotlin Boilerplate refers to standardized methods, procedures and files 
 * _Fastlane_ for CI/CD tasks.
 * _SonarCloud_ for static code analysis.
 * _Github_ workflows for automated PR actions and Firebase app distribution.
+* _Azure DevOps Pipelines_ workflows for automated PR actions.
 * _dokka_ for Kotlin's documentation generation.
 
 ## Installation  
